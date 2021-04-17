@@ -251,3 +251,48 @@ button {
 }
 
 /*---------------------END==>MAIN---------------------*/
+/*===================================TABLET=============================================*/
+@media screen and (max-width:1000px) {
+    .cards-Container {
+        width: 100%;
+        padding: 1.2rem;
+        margin: 20px auto;
+        columns: 3;
+        column-gap: 25px;
+
+    }
+}
+
+@media screen and (min-width:578px) and (max-width: 768px) {
+    .cards-Container {
+        width: 100%;
+        padding: 1.2rem;
+        margin: 20px auto;
+        columns: 2;
+        column-gap: 25px;
+
+    }
+}
+
+@media screen and (max-width:578px) {
+    .cards-Container {
+        width: 100%;
+        padding: 1.2rem;
+        margin: 20px auto;
+        columns: 1;
+        column-gap: 25px;
+
+    }
+
+    .description {
+        flex-wrap: nowrap;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 0.7rem;
+    }
+}
