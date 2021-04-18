@@ -25,6 +25,24 @@ button {
     outline: none;
 }
 
+@font-face {
+    font-family: workSans;
+    src: url(./font/WorkSans-VariableFont_wght.ttf);
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+    font-family: workSans;
+}
+
 /*---------------------END---------------------*/
 
 /*===================================DESKTOP=============================================*/
@@ -251,7 +269,7 @@ button {
 }
 
 /*---------------------END==>MAIN---------------------*/
-/*===================================TABLET=============================================*/
+/*===================================OTHER DEVICE=============================================*/
 @media screen and (max-width:1000px) {
     .cards-Container {
         width: 100%;
@@ -263,7 +281,7 @@ button {
     }
 }
 
-@media screen and (min-width:578px) and (max-width: 768px) {
+@media screen and (min-width:500px) and (max-width: 768px) {
     .cards-Container {
         width: 100%;
         padding: 1.2rem;
@@ -272,9 +290,35 @@ button {
         column-gap: 25px;
 
     }
+
+    .topHeader {
+        width: 100%;
+        background-color: transparent;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5rem;
+        z-index: 6;
+    }
+
+    .logo {
+        font-weight: 1000;
+        font-size: 1.8rem;
+        color: #fff;
+        margin-top: 3.5rem;
+    }
+
+
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media screen and (max-width:578px) {
+@media screen and (max-width:500px) {
     .cards-Container {
         width: 100%;
         padding: 1.2rem;
@@ -289,10 +333,24 @@ button {
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .para {
         font-size: 0.7rem;
     }
+
+
+    ..topHeader {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menuContainer {
+        display: none;
+    }
+
 }
